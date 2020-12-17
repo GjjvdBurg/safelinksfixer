@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Safelinks Fixer",
 	"description": "Replaces Outlook Safelink URLs with a direct link",
-	"version": "1.2.0",
+	"version": "2.0.0",
 	"homepage_url": "https://github.com/GjjvdBurg/safelinksfixer",
 	"applications": {
 		"gecko": {
