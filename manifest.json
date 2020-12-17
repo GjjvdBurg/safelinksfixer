@@ -1,20 +1,30 @@
 {
 	"manifest_version": 2,
+	"name": "Safelinks Fixer",
+	"description": "Replaces Outlook Safelink URLs with a direct link",
+	"version": "1.2.0",
+	"homepage_url": "https://github.com/GjjvdBurg/safelinksfixer",
 	"applications": {
 		"gecko": {
 			"id": "safelinks_fixer@gertjanvandenburg.com",
-			"strict_min_version": "68.0"
+			"strict_min_version": "78.4.0"
 		}
 	},
-	"name": "Safelinks Fixer",
-	"description": "Replaces Outlook Safelink URLs with a direct link",
-	"homepage_url": "https://github.com/GjjvdBurg/safelinksfixer",
-	"version": "1.1.3",
+	"icons": {
+		"32": "icon.png",
+		"64": "icon.png"
+	},
+	"background": {
+		"scripts": [
+			"scripts/background.js"
+		]
+	},
+	"permissions": [
+		"messagesModify",
+		"compose"
+	],
 	"developer": {
 		"name": "Gertjan van den Burg",
 		"url": "https://gertjan.dev"
-	},
-	"legacy": {
-		"type": "xul"
 	}
 }

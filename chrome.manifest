@@ -1,3 +1,0 @@
-content   safelinksfixer                 chrome/content/
-overlay chrome://messenger/content/messenger.xul chrome://safelinksfixer/content/messenger-overlay.xul
-overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://safelinksfixer/content/compose-overlay.xul
