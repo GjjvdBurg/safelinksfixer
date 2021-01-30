@@ -39,6 +39,16 @@ if (typeof SafelinksFixer == "undefined") {
 				SafelinksFixer.fixLink(link);
 			}
 			catch (e) {
+				//console.log(e);
+			}
+		}
+		if (contentDocument.body && contentDocument.body.innerHTML) {
+			try {
+				html = SafelinksFixer.replaceURLs(contentDocument.body.innerHTML);
+				contentDocument.body.innerHTML = html;
+			}
+			catch (e) {
+				//console.log(e);
 			}
 		}
 	};
