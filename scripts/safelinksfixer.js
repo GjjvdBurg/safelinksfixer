@@ -13,6 +13,7 @@ if (typeof SafelinksFixer == "undefined") {
 			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&amp;data=.*reserved=0"),
 			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&sdata=.*reserved=0"),
 			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&amp;sdata=.*reserved=0"),
+			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&amp;amp;data=.*reserved=0")
 		);
 		var i;
 		for (i=0; i<regexes.length; i++) {
