@@ -9,10 +9,10 @@ if (typeof SafelinksFixer == "undefined") {
 	SafelinksFixer.replaceURLs = function(text) {
 		var result;
 		var regexes = new Array(
-			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&data=.*reserved=0", "g"),
-			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&amp;data=.*reserved=0", "g"),
-			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&sdata=.*reserved=0", "g"),
-			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&amp;sdata=.*reserved=0", "g")
+			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&data=.*reserved=0"),
+			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&amp;data=.*reserved=0"),
+			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&sdata=.*reserved=0"),
+			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&amp;sdata=.*reserved=0"),
 		);
 		var i;
 		for (i=0; i<regexes.length; i++) {
