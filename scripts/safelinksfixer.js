@@ -6,7 +6,7 @@
 if (typeof SafelinksFixer == "undefined") {
 	var SafelinksFixer = {};
 
-	SafelinksFixer.replaceURL = function(text) {
+	SafelinksFixer.replaceURLs = function(text) {
 		var result;
 		var regexes = new Array(
 			new RegExp("https:\/\/.*\.safelinks\.protection.*url=(.*)&data=.*reserved=0", "g"),
@@ -27,8 +27,8 @@ if (typeof SafelinksFixer == "undefined") {
 	}
 
 	SafelinksFixer.fixLink = function(link) {
-		link.firstChild.data = SafelinksFixer.replaceURL(link.firstChild.data);
-		link.href = SafelinksFixer.replaceURL(link.href);
+		link.firstChild.data = SafelinksFixer.replaceURLs(link.firstChild.data);
+		link.href = SafelinksFixer.replaceURLs(link.href);
 	}
 
 	SafelinksFixer.doFixups = function(contentDocument) {
